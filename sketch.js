@@ -9,7 +9,7 @@ const particleSize = 10;
 const drawSize = 1; // TODO: Unused so far.
 
 // Game Variables
-var particlePalette = [Water, Dirt, Cloud, Gas, Metal];
+var particlePalette = [Water, Dirt, Cloud, Gas, Metal, Hydrogen, Oxygen];
 var currentParticle = 0;
 var particleBorder = false;
 var particles = [];
@@ -17,7 +17,7 @@ var particles = [];
 function preload() {}
 
 function setup() {
-	createCanvas(particleSize * 60, particleSize * 30);
+	createCanvas(particleSize * 120, particleSize * 60);
 	rectMode(CENTER);
 }
 

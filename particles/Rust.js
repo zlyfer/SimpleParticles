@@ -4,6 +4,6 @@ class Rust extends GenericParticle {
 		this.name = "rust";
 		this.color = "#b7410e";
 		this.density = 2;
-		this.doesWiggle = false;
+		this.isSolid = true;
 	}
 }

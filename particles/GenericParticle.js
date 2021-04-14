@@ -4,12 +4,12 @@ class GenericParticle {
 		this.name = "genericparticle";
 		this.color = "#000000";
 		this.density = 0;
-		this.doesWiggle = true;
+		this.isSolid = false;
 	}
 
 	update() {
 		this.move();
-		if (this.doesWiggle) this.wiggle();
+		if (!this.isSolid) this.flow();
 		if (showParticles) this.draw();
 	}
 
@@ -38,7 +38,7 @@ class GenericParticle {
 		}
 	}
 
-	wiggle() {
+	flow() {
 		// TODO: Not only if "particle ===undefined" but also if not the same (density);
 		let rn = Math.floor(Math.random() * 2) == 0 ? true : false;
 		if (rn) {
